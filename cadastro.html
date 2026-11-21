@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>EcoColeta - Cadastro</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="img/logoreciclo.png" alt="lixo">
+        <h1>Crie sua <span>Conta</span></h1>
+        <p>Cadastre-se para informar pontos com lixo.</p>
+    </div>
+
+    <form class="form-cadastro" onsubmit="realizarCadastro(event)">
+        <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="name" name="name" placeholder="Nome completo" required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-id-card"></i>
+            <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="confirmasenha" name="confirmasenha" placeholder="Confirma senha" required>
+        </div>
+
+        <button type="submit" class="btn-primary">Cadastrar</button>
+
+        <h3>Ao criar a conta, você concorda em usar a plataforma de forma responsável.</h3>
+
+        <p class="toggle-auth">Já tem uma conta? <a href="login.html" id="toLogin">Entrar</a></p>
+
+        <h6>Seus dados são usados para organizar as solicitações de coleta.</h6>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
